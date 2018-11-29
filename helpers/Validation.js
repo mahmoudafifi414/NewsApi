@@ -36,6 +36,18 @@ class Validation {
             this.exceptionArray.push('Text Body should be more than 200 characters')
         }
     }
+
+    validateFromDate(fromDate = null) {
+        if (fromDate != null && !fromDate.match(/([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))$/gi)) {
+            return 'from date should be like format 1978-02-02'
+        }
+    }
+
+    validateToDate(toDate = null) {
+        if (toDate != null && !toDate.match(/([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))$/gi)) {
+            return 'To date should be like format 1978-02-02'
+        }
+    }
 }
 
 export default new Validation()
