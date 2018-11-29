@@ -18,8 +18,11 @@ export class NewsRouter {
         app.get('/api/news/edit/:id', (req, res) => {
             this.newsController.editNews(req, res)
         })
+        app.patch('/api/news/update/:id', (req, res) => {
+            this.newsController.updateNews(req, res)
+        })
         app.delete('/api/news/delete/:id', (req, res) => {
-            this.newsController.deleteContact(req, res)
+            this.newsController.deleteNews(req, res)
         })
     }
 
