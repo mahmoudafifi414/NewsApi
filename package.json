@@ -1,0 +1,30 @@
+{
+  "name": "newsapi",
+  "version": "1.0.0",
+  "description": "this is very small api in ECMA6 to news API",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.14",
+    "nodemon": "^1.18.7"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon starter.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahmoudafifi414/NewsApi_ECMA6.git"
+  },
+  "author": "mahmoud gamal afifi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mahmoudafifi414/NewsApi/issues"
+  },
+  "homepage": "https://github.com/mahmoudafifi414/NewsApi#readme"
+}
